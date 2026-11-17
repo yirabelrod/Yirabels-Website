@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact - Yirabel Rodriguez</title> 
+    <link type="text/css" rel="stylesheet" href="/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Ingrid+Darling&display=swap" rel="stylesheet">
+
+
+     <link rel="icon" type="image/x-icon" href="yrlogo.png">
+</head>
+
+<body class="contactpage"> <!-- Added contactpage class here -->
+
+    <header>
+        <nav>
+            <a href="home.html" class="logo"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="works.html">WORKS</a></li>
+                <li><a href="artistpage.html">ARTIST</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li> <!-- Highlighted active tab -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gif-box">
+            <img src="toothfairy.gif" alt="Animated Gif" width="400" height="400">
+        </div>
+
+        <div class="container">
+  <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="773d44bd-088b-4b5c-8e1a-1b9e0163f117">
+  <label>
+    <p> Your Name:</p>
+  <input type="text" name="name" required>
+  </label>
+  <label>
+    <p> Your Email:</p>
+  <input type="email" name="email" required>
+  </label>
+  <label>
+    <p> Your Message:</p>
+  <textarea name="message" required></textarea>
+  </label>
+  <button type="submit">Submit Form</button>
+</form>
+</div>
+
+    </main>
+
+</body>
+</html>

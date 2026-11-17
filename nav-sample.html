@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="icon" type="image/x-icon" href="yrlogo.png">
+	<title>Nav Sample</title>
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+
+		/* --- NAVIGATION --- */
+
+		.logo {
+			width: 40px;
+			height: 40px;
+			background-image: url('yrlogo.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			cursor: pointer;
+		}
+
+		.logo:hover {
+			background-image: url('/toothfairy.gif');
+		}
+
+		nav {
+			background-color:#feebf6;
+			box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+			position: fixed;
+			width: 100%;
+			z-index: 3;
+		}
+
+		nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			overflow: hidden;
+			background-color: #feebf6;
+		}
+
+		nav li a {
+			display: block;
+			padding: 20px 40px;
+			text-decoration: none;
+			color: #e4b8d0;
+			font-weight: 600;
+		}
+
+		.active {
+			background-color: #feebf6;
+			color:  #3f1622;
+		}
+
+		nav li a:hover,
+		nav .menu-btn:hover {
+			background-color: #e4b8d0;
+			color: #3f1622;
+		}
+
+		nav .logo {
+			display: block;
+			float: left;
+			font-size: 2em;
+			padding: 10px 40px 10px 40px;
+			text-decoration: none;
+		}
+
+		/* MENU */
+
+		nav .menu {
+			clear: both;
+			max-height: 0;
+			transition: max-height .2s ease-out;
+		}
+
+		/* MENU ICON */
+
+		nav .menu-icon {
+			cursor: pointer;
+			display: inline-block;
+			float: right;
+			padding: 28px 40px;
+			position: relative;
+			user-select: none;
+		}
+
+		nav .menu-icon .navicon {
+			background: #3f1622;
+			display: block;
+			height: 4px;
+			position: relative;
+			transition: background .2s ease-out;
+			width: 24px;
+		}
+
+		nav .menu-icon .navicon:before,
+		nav .menu-icon .navicon:after {
+			background: #3f1622;
+			content: '';
+			display: block;
+			height: 100%;
+			position: absolute;
+			transition: all .2s ease-out;
+			width: 100%;
+		}
+
+		nav .menu-icon .navicon:before {
+			top: 8px;
+		}
+
+		nav .menu-icon .navicon:after {
+			top: -8px;
+		}
+
+		/* MENU btn */
+
+		nav .menu-btn {
+			display: none;
+		}
+
+		nav .menu-btn:checked~.menu {
+			max-height: 240px;
+		}
+
+		nav .menu-btn:checked~.menu-icon .navicon {
+			background: transparent;
+		}
+
+		nav .menu-btn:checked~.menu-icon .navicon:before {
+			transform: rotate(-45deg);
+		}
+
+		nav .menu-btn:checked~.menu-icon .navicon:after {
+			transform: rotate(45deg);
+		}
+
+		nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+		nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+			top: 0;
+		}
+
+		/* 48em = 768px */
+
+		@media (min-width: 48em) {
+			nav li {
+				float: left;
+			}
+
+			nav li a {
+				padding: 22px 40px;
+			}
+
+			nav .menu {
+				clear: none;
+				float: right;
+				max-height: none;
+			}
+
+			nav .menu-icon {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body class="navigation">
+	<header>
+		<nav>
+			<a href="home.html" class="logo"></a>
+			<input class="menu-btn" type="checkbox" id="menu-btn">
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li><a href="works.html">WORKS</a></li>
+				<li><a href="artistpage.html">ARTIST</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+
+</body>
+
+</html>
