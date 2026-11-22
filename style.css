@@ -629,6 +629,79 @@ h1 {
    }
 }
 
+/* Traditional Art Grid - Desktop */
+
+.grid-container3 {
+   display: grid;
+   grid-template-columns: repeat(8, 1fr); 
+   grid-template-rows: repeat(6, auto); /* Changed from 300px to auto */
+   gap: 2em; 
+   grid-template-areas:
+      "box-1 box-1 box-1 box-1 box-2 box-2 box-2 box-2"
+      "box-3 box-3 box-3 box-3 box-4 box-4 box-4 box-4"
+      "box-5 box-5 box-5 box-5 box-6 box-6 box-6 box-6";
+   color: #e4b8d0;
+   padding: 10px;
+}
+
+.grid-container3 img {
+   width: 100%;
+   height: auto;
+   object-fit: contain; /* Shows the full image without cropping or stretching */
+}
+/* Keep text and images neatly stacked inside each box */
+.grid-container3 > div {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+/* Keep images scaled cleanly without overflowing */
+.grid-container3 img {
+   width: 100%;
+   height: 100%;
+   min-height: 0; /* Prevents flex items from pushing past the grid row height */
+   object-fit: cover;
+   display: block;
+   border-radius: 4px;
+}
+
+/* Style all your grid items so text is stacked ABOVE or BELOW the image */
+.grid-container3 > div {
+   display: flex;
+   flex-direction: column-reverse; /* Puts the text BELOW the image. Change to 'column' if you want it above! */
+   gap: 10px; /* Space between the image and your caption text */
+   
+   /* Apply your font and color styling */
+   font-family: 'Ingrid Darling', cursive;
+   font-size: 1.5rem; /* Adjust this size if you want it bigger or smaller */
+   color: #3f1622;
+}
+
+
+
+/* DIGITAL ART GRID - MOBILE RESPONSIVE MEDIA QUERY */
+@media (max-width: 768px) 
+   .grid-container1 {
+      grid-template-columns: 1fr; /* Switches from 8 columns down to 1 full-width column */
+      grid-template-rows: auto;   /* Allows each artwork box to size naturally to its content */
+      gap: 2.5em;                 /* Adds breathing room between each stacked piece */
+      
+      /* Stacks all your grid areas vertically in order from box-1 to box-6 */
+      grid-template-areas:
+         "box-1"
+         "box-2"
+         "box-3"
+         "box-4"
+         "box-5"
+         "box-6";
+   }
+
+   /* Gives your images a clean, uniform height on smaller screens */
+   .grid-container3 img {
+      height: 350px; 
+   }
+
 /* Style for individual art figure containers */
 .art-item {
    display: flex;
