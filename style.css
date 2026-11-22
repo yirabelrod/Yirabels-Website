@@ -56,32 +56,38 @@ table {
 /* 2. TYPOGRAPHY & GENERAL STYLING            */
 /* ========================================== */
 .ingrid-darling-regular {
-  font-family: "Ingrid Darling", cursive;
-  font-weight: 400;
-  font-style: normal;
+   font-family: "Ingrid Darling", cursive;
+   font-weight: 400;
+   font-style: normal;
 }
 
 .old-standard-tt-regular {
-  font-family: "Old Standard TT", serif;
-  font-weight: 400;
-  font-style: normal;
+   font-family: "Old Standard TT", serif;
+   font-weight: 400;
+   font-style: normal;
 }
 
 .old-standard-tt-bold {
-  font-family: "Old Standard TT", serif;
-  font-weight: 700;
-  font-style: normal;
+   font-family: "Old Standard TT", serif;
+   font-weight: 700;
+   font-style: normal;
 }
 
 .old-standard-tt-regular-italic {
-  font-family: "Old Standard TT", serif;
-  font-weight: 400;
-  font-style: italic;
+   font-family: "Old Standard TT", serif;
+   font-weight: 400;
+   font-style: italic;
 }
 
 /* Global padding for sub-pages to clear the fixed navbar */
-.artistpage, .contactpage, .workspage, .works, .tradworkspage, .sculptureworkspage, .digiworkspage {
-   padding-top: 90x;
+.artistpage,
+.contactpage,
+.workspage,
+.works,
+.tradworkspage,
+.sculptureworkspage,
+.digiworkspage {
+   padding-top: 90px;
 }
 
 
@@ -97,10 +103,10 @@ table {
    align-items: center;
    text-align: center;
    background-image: url("other imgs/Lacetrim.png");
-   background-size: cover; 
-   background-position: center;  
-   background-repeat: no-repeat; 
-   background-attachment: fixed; 
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
    box-sizing: border-box;
 }
 
@@ -311,17 +317,16 @@ nav .menu-btn:checked ~ .menu-icon .navicon:after {
 }
 
 /* Works Hub Page */
-/* WORKS PAGE - FULL-WIDTH, UNIFORM HEIGHT CARDS */
 .workspage .artwork-page {
    width: 100%;
-   max-width: none; /* Removes any narrow container cap so it fills the screen */
-   padding: 100px 3% 40px 3%; /* Small 3% side margins so cards take up 94% of the screen */
+   max-width: none;
+   padding: 100px 3% 40px 3%;
    box-sizing: border-box;
 }
 
 .workspage .work-grid {
    display: grid;
-   grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+   grid-template-columns: repeat(3, 1fr);
    gap: 2rem;
    width: 100%;
 }
@@ -330,8 +335,8 @@ nav .menu-btn:checked ~ .menu-icon .navicon:after {
    position: relative;
    display: block;
    width: 100%;
-   height: 75vh;        /* Makes all 3 boxes tall and identical in height */
-   min-height: 520px;   /* Keeps them large even on shorter browser windows */
+   height: 75vh;
+   min-height: 520px;
    overflow: hidden;
    text-decoration: none;
    transition: transform 0.3s ease;
@@ -341,7 +346,6 @@ nav .menu-btn:checked ~ .menu-icon .navicon:after {
    transform: translateY(-6px);
 }
 
-/* Forces every photo to match the exact same box dimensions */
 .workspage .work-photo {
    width: 100% !important;
    height: 100% !important;
@@ -349,19 +353,17 @@ nav .menu-btn:checked ~ .menu-icon .navicon:after {
    display: block;
 }
 
-/* Keeps your horizontal lace ribbon centered across the middle */
 .workspage .lace {
    position: absolute;
    top: 50%;
    left: 0;
    transform: translateY(-50%);
    width: 100%;
-   height: auto;        /* Preserves the natural height of your lace band without stretching it */
+   height: auto;
    pointer-events: none;
    z-index: 2;
 }
 
-/* Centers the Ingrid Darling title right on top of the lace ribbon */
 .workspage .work-title {
    position: absolute;
    top: 50%;
@@ -375,7 +377,6 @@ nav .menu-btn:checked ~ .menu-icon .navicon:after {
    pointer-events: none;
 }
 
-/* MOBILE RESPONSIVE */
 @media (max-width: 850px) {
    .workspage .work-grid {
       grid-template-columns: 1fr;
@@ -388,7 +389,6 @@ nav .menu-btn:checked ~ .menu-icon .navicon:after {
    }
 }
 
-/*mycodestartshere*/
 .artwork-page {
    padding-top: 120px;
 }
@@ -418,634 +418,4 @@ nav .menu-btn:checked ~ .menu-icon .navicon:after {
 .work-box {
    position: relative;
    display: block;
-   width: 100%;
-   min-width: 0;
-   overflow: hidden;
-   text-decoration: none;
-}
-
-.work-photo {
-   width: 100%;
-   height: auto;
-   display: block;
-   filter: grayscale(100%);
-   transition: filter 0.4s ease;
-}
-
-.work-box:hover .work-photo {
-   filter: grayscale(0%);
-}
-
-.lace {
-   position: absolute;
-   top: 40%;
-   left: 0;
-   width: 100%;
-   z-index: 2;
-   pointer-events: none;
-}
-
-.work-title {
-   position: absolute;
-   top: 40%;
-   left: 0%;
-   width: 100%;
-   z-index: 3;
-   text-align: center;
-   font-family: "Ingrid Darling", cursive;
-   font-size: 60px;
-   color: #3f1622;
-   pointer-events: none;
-}
-
-/* Individual Work Galleries */
-h1 {
-   font-family: "Ingrid Darling", cursive;
-   font-size: x-large;
-}
-
-/*responsive test*/
-
-.responsiveimage {
-   max-width: 100%;
-   height: auto;
-}
-.trad-grid {
-   display: flex;
-   justify-content: left;
-   gap: 30px;
-   padding: 50px;
-   box-sizing: border-box;
-}
-
-.sculpt-grid {
-   display: flex;
-   justify-content: left;
-   gap: 30px;
-   padding: 50px;
-   box-sizing: border-box;
-}
-
-
-
-/* DIGITAL ART GRID */
-.grid-container1 {
-   display: grid;
-   grid-template-columns: repeat(8, 1fr); 
-   grid-template-rows: repeat(6, 300px); 
-   gap: 2em; 
-   grid-template-areas:
-      "box-1 box-1 box-1 box-1 box-2 box-2 box-2 box-2"
-      "box-1 box-1 box-1 box-1 box-2 box-2 box-2 box-2"
-      "box-3 box-3 box-3 box-3 box-4 box-4 box-4 box-4"
-      "box-3 box-3 box-3 box-3 box-4 box-4 box-4 box-4"
-      "box-5 box-5 box-5 box-5 box-6 box-6 box-6 box-6"
-      "box-5 box-5 box-5 box-5 box-6 box-6 box-6 box-6";
-
-   color: #e4b8d0;
-   padding: 10px;
-}
-
-/* Keep text and images neatly stacked inside each box */
-.grid-container1 > div {
-   display: flex;
-   flex-direction: column;
-   gap: 8px;
-}
-
-/* Keep images scaled cleanly without overflowing */
-.grid-container1 img {
-   width: 100%;
-   height: 100%;
-   min-height: 0; /* Prevents flex items from pushing past the grid row height */
-   object-fit: cover;
-   display: block;
-   border-radius: 4px;
-}
-
-/* Style all your grid items so text is stacked ABOVE or BELOW the image */
-.grid-container1 > div {
-   display: flex;
-   flex-direction: column-reverse; /* Puts the text BELOW the image. Change to 'column' if you want it above! */
-   gap: 10px; /* Space between the image and your caption text */
-   
-   /* Apply your font and color styling */
-   font-family: 'Ingrid Darling', cursive;
-   font-size: 1.5rem; /* Adjust this size if you want it bigger or smaller */
-   color: #3f1622;
-}
-
-
-
-/* DIGITAL ART GRID - MOBILE RESPONSIVE MEDIA QUERY */
-@media (max-width: 768px) {
-   .grid-container1 {
-      grid-template-columns: 1fr; /* Switches from 8 columns down to 1 full-width column */
-      grid-template-rows: auto;   /* Allows each artwork box to size naturally to its content */
-      gap: 2.5em;                 /* Adds breathing room between each stacked piece */
-      
-      /* Stacks all your grid areas vertically in order from box-1 to box-6 */
-      grid-template-areas:
-         "box-1"
-         "box-2"
-         "box-3"
-         "box-4"
-         "box-5"
-         "box-6";
-   }
-
-   /* Gives your images a clean, uniform height on smaller screens */
-   .grid-container1 img {
-      height: 350px; 
-   }
-}
-
-/* SCULPTURE GRID - DESKTOP */
-.grid-container2 {
-   display: grid;
-   grid-template-columns: repeat(8, 1fr); 
-   grid-template-rows: repeat(4, 300px); /* 4 rows for 4 sculptures */
-   gap: 2em; 
-   grid-template-areas:
-      "box-1 box-1 box-1 box-1 box-2 box-2 box-2 box-2"
-      "box-1 box-1 box-1 box-1 box-2 box-2 box-2 box-2"
-      "box-3 box-3 box-3 box-3 box-2 box-2 box-2 box-2"
-      "box-3 box-3 box-3 box-3 box-4 box-4 box-4 box-4"
-      ".     .     .     .     box-4 box-4 box-4 box-4"
-      ".     .     .     .     box-4 box-4 box-4 box-4";
-
-   color: #3f1622;
-   padding: 10px;
-}
-
-/* Stack each sculpture image above its caption */
-.grid-container2 > div {
-   display: flex;
-   flex-direction: column;
-   gap: 8px;
-}
-
-/* Keep images scaled cleanly without overflowing */
-.grid-container2 img {
-   width: 100%;
-   height: 100%;
-   min-height: 0;
-   object-fit: contain; /* Ensures the entire sculpture fits within the grid box without cropping */
-   display: block;
-   border-radius: 4px;
-}
-
-/* Caption container */
-.grid-container2 .caption {
-   display: flex;
-   align-items: baseline;
-   gap: 10px;
-   flex-wrap: wrap;
-}
-
-/* Sculpture title in Ingrid Darling */
-.grid-container2 .art-title {
-   font-family: 'Ingrid Darling', cursive;
-   font-size: 2rem;
-   line-height: 1;
-   color: #3f1622; /* Changed back to your light pink tone for visibility */
-}
-
-/* SCULPTURE GRID - MOBILE RESPONSIVE MEDIA QUERY */
-@media (max-width: 768px) {
-   .grid-container2 {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      gap: 2.5em;
-      grid-template-areas:
-         "box-1"
-         "box-2"
-         "box-3"
-         "box-4";
-   }
-
-   .grid-container2 img {
-      height: 350px; 
-   }
-}
-
-/* Traditional Art Grid - Desktop */
-
-.grid-container3 {
-   display: grid;
-   grid-template-columns: repeat(8, 1fr); 
-   grid-template-rows: repeat(6, auto); /* Changed from 300px to auto */
-   gap: 2em; 
-   grid-template-areas:
-      "box-1 box-1 box-1 box-1 box-2 box-2 box-2 box-2"
-      "box-3 box-3 box-3 box-3 box-4 box-4 box-4 box-4"
-      "box-5 box-5 box-5 box-5 box-6 box-6 box-6 box-6";
-   color: #e4b8d0;
-   padding: 10px;
-}
-
-.grid-container3 img {
-   width: 100%;
-   height: auto;
-   object-fit: contain; /* Shows the full image without cropping or stretching */
-}
-/* Keep text and images neatly stacked inside each box */
-.grid-container3 > div {
-   display: flex;
-   flex-direction: column;
-   gap: 8px;
-}
-
-/* Keep images scaled cleanly without overflowing */
-.grid-container3 img {
-   width: 100%;
-   height: 100%;
-   min-height: 0; /* Prevents flex items from pushing past the grid row height */
-   object-fit: cover;
-   display: block;
-   border-radius: 4px;
-}
-
-/* Style all your grid items so text is stacked ABOVE or BELOW the image */
-.grid-container3 > div {
-   display: flex;
-   flex-direction: column-reverse; /* Puts the text BELOW the image. Change to 'column' if you want it above! */
-   gap: 10px; /* Space between the image and your caption text */
-   
-   /* Apply your font and color styling */
-   font-family: 'Ingrid Darling', cursive;
-   font-size: 1.5rem; /* Adjust this size if you want it bigger or smaller */
-   color: #3f1622;
-}
-
-
-
-/* DIGITAL ART GRID - MOBILE RESPONSIVE MEDIA QUERY */
-@media (max-width: 768px) 
-   .grid-container1 {
-      grid-template-columns: 1fr; /* Switches from 8 columns down to 1 full-width column */
-      grid-template-rows: auto;   /* Allows each artwork box to size naturally to its content */
-      gap: 2.5em;                 /* Adds breathing room between each stacked piece */
-      
-      /* Stacks all your grid areas vertically in order from box-1 to box-6 */
-      grid-template-areas:
-         "box-1"
-         "box-2"
-         "box-3"
-         "box-4"
-         "box-5"
-         "box-6";
-   }
-
-   /* Gives your images a clean, uniform height on smaller screens */
-   .grid-container3 img {
-      height: 350px; 
-   }
-
-/* Style for individual art figure containers */
-.art-item {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
-}
-
-/* Style for the caption box */
-.art-caption {
-   margin-top: 15px;
-}
-
-/* Style for the piece title inside the caption */
-.art-caption h3 {
-   font-family: "Ingrid Darling", cursive;
-   font-size: 32px;
-   color: #3f1622;
-   margin-bottom: 5px;
-}
-
-/* Style for the description/medium text */
-.art-caption p {
-   font-family: "Old Standard TT", serif;
-   font-size: 16px;
-   color: #3f1622;
-   font-style: italic;
-
-}
-
-/* ========================================== */
-/* 6. MEDIA QUERIES (Mobile Responsiveness)   */
-/* ========================================== */
-
-/* Desktop Nav adjustments */
-@media (min-width: 48em) {
-   nav li {
-      float: left;
-   }
-
-   nav li a {
-      padding: 22px 40px;
-   }
-
-   nav .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-   }
-
-   nav .menu-icon {
-      display: none;
-   }
-}
-
-/* Mobile Screens (768px / 48em and below) */
-@media (max-width: 768px) {
-   .mainhead {
-      font-size: 55px;
-      line-height: 4rem;
-      padding: 20px 10px;
-   }
-
-   .button-gp {
-      flex-direction: column;
-      gap: 10px;
-      width: 85%;
-      max-width: 300px;
-      margin: 0 auto;
-   }
-
-   .button-gp form {
-      width: 100%;
-   }
-
-   .button-gp button {
-      width: 100%;
-      margin-top: 15px;
-      padding: 12px 20px;
-      font-size: 18px;
-   }
-
-   .work-grid {
-      grid-template-columns: 1fr !important;
-      padding: 20px;
-      gap: 20px;
-   }
-
-   .work-title {
-      font-size: 40px;
-   }
-
-   .artistimg, .gif-box, .trad-grid, .sculpt-grid, .digi-grid {
-      flex-direction: column;
-      padding: 20px;
-      align-items: center;
-   }
-}
-
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 50%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid  #feebf6; /* pink border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #3f1622;
-;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #e4b8d0;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color:  #feebf6;
-  padding: 20px;
-}
-
-/* CONTAINER STYLING */
-.container {
-   border-radius: 5px;
-   background-color:  #feebf6;
-   padding: 20px;
-}        
-
-.textarea-container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 20px;
-   max-width: 100%;
-}
-
-/*ARTIST STATEMENT STYLING*/
-.artiststatement {
-   font-family: "Old Standard TT", serif;
-   color: #3f1622;
-   text-align: left;
-   font-size: 28px;
-   padding: 75px;
-   line-height: 1.6;
-   line-spacing: 2.5;
-
-}
-
-/* CONTACT PAGE LAYOUT - TOP RIGHT ALIGNMENT */
-/* PAGE BACKGROUND & DEFAULT TEXT COLOR */
-body.contactpage {
-   background-color: #feebf6;
-   color: #3f1622;
-}
-
-/* CONTACT PAGE LAYOUT - TOP RIGHT ALIGNMENT */
-.contactpage main {
-   display: flex;
-   justify-content: flex-end;
-   align-items: flex-start;
-   gap: 4em;
-   padding: 90px 5% 40px 5%;
-   max-width: 1400px;
-   margin-left: auto;
-}
-
-/* GIF Styling */
-.contactpage .gif-box img {
-   max-width: 100%;
-   height: auto;
-   border-radius: 8px;
-   display: block;
-}
-
-/* FORM CONTAINER */
-.contactpage .container {
-   width: 100%;
-   max-width: 450px;
-   background-color: #feebf6;
-   border: 1px solid #3f1622;
-   border-radius: 12px;
-   padding: 30px;
-   box-shadow: 0 8px 24px rgba(63, 22, 34, 0.12);
-}
-
-.contactpage form {
-   display: flex;
-   flex-direction: column;
-   gap: 18px;
-}
-
-/* LABELS ("Your Name:", "Your Email:", etc.) */
-.contactpage label p {
-   font-family: 'Ingrid Darling', cursive;
-   font-size: 2rem;
-   color: #3f1622;
-   margin: 0 0 6px 0;
-   line-height: 1;
-}
-
-/* INPUTS & TEXTAREA */
-.contactpage input[type="text"],
-.contactpage input[type="email"],
-.contactpage textarea {
-   width: 100%;
-   box-sizing: border-box;
-   padding: 12px 14px;
-   background-color: #feebf6;
-   border: 1px solid #3f1622;
-   border-radius: 6px;
-   color: #3f1622;
-   font-family: 'Old Standard TT', serif;
-   font-size: 1rem;
-   outline: none;
-   transition: background-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.contactpage input[type="text"]:focus,
-.contactpage input[type="email"]:focus,
-.contactpage textarea:focus {
-   background-color: #ffffff;
-   box-shadow: 0 0 8px rgba(63, 22, 34, 0.25);
-}
-
-.contactpage textarea {
-   min-height: 130px;
-   resize: vertical;
-}
-
-/* SUBMIT BUTTON */
-.contactpage button[type="submit"] {
-   align-self: flex-end;
-   margin-top: 6px;
-   padding: 10px 28px;
-   background-color: #3f1622;
-   color: #feebf6;
-   border: 1px solid #3f1622;
-   border-radius: 25px;
-   font-family: 'Old Standard TT', serif;
-   font-weight: 700;
-   font-size: 1rem;
-   letter-spacing: 0.5px;
-   cursor: pointer;
-   transition: all 0.25s ease;
-}
-
-.contactpage button[type="submit"]:hover {
-   background-color: #feebf6;
-   color: #3f1622;
-}
-
-/* MOBILE RESPONSIVE - STACKS CLEANLY ON PHONES */
-@media (max-width: 850px) {
-   .contactpage main {
-      flex-direction: column;
-      align-items: center;
-      padding-top: 80px;
-      gap: 2em;
-   }
-
-   .contactpage .container {
-      max-width: 100%;
-   }
-}
-
-
-/* ARTIST STATEMENT PAGE LAYOUT */
-body.artistpage {
-   background-color: #feebf6; /* Keeps your light pink page background */
-   color: #3f1622;
-}
-
-.artistpage .artist-main {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 5rem;
-   max-width: 1300px;
-   margin: 0 auto;
-   padding: 110px 5% 50px 5%;
-   box-sizing: border-box;
-}
-
-/* Headshot Photo Styling */
-.artistpage .artistimg {
-   flex: 1;
-   max-width: 420px;
-}
-
-.artistpage .artistimg img {
-   width: 100%;
-   height: auto;
-   display: block;
-}
-
-/* Statement Text Container */
-.artistpage .artist-statement-box {
-   flex: 1.3;
-   padding: 20px;
-}
-
-/* Statement Body Paragraphs in Old Standard TT */
-.artistpage .statement-text p {
-   font-family: 'Old Standard TT', serif;
-   font-size: 1.25rem;
-   line-height: 1.85;
-   color: #3f1622;
-   margin-bottom: 1.5rem;
-}
-
-.artistpage .statement-text p:last-child {
-   margin-bottom: 0;
-}
-
-/* MOBILE RESPONSIVE - STACKS ON PHONES */
-@media (max-width: 900px) {
-   .artistpage .artist-main {
-      flex-direction: column;
-      gap: 2.5rem;
-      padding-top: 90px;
-   }
-
- /* Headshot Photo Styling - Enlarged */
-.artistpage .artistimg {
-   flex: 1.4;          /* Gives the image column more width relative to the text */
-   max-width: 580px;   /* Increased from 420px (raise to 650px if you want it even larger) */
-}
-
-/* Statement Text Container */
-.artistpage .artist-statement-box {
-   flex: 1;
-   padding: 20px;
-}
+   width:
