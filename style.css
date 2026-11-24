@@ -96,7 +96,7 @@ table {
    justify-content: center;
    align-items: center;
    text-align: center;
-   background-image: url("other imgs/Lacetrim.png");
+   background-image: url("otherimages/Lacetrim.png");
    background-size: cover; 
    background-position: center;  
    background-repeat: no-repeat; 
@@ -637,14 +637,14 @@ h1 {
    grid-template-rows: repeat(6, auto); /* Changed from 300px to auto */
    gap: 2em; 
    grid-template-areas:
-      "box-1 box-1 box-1 box-1 box-2 box-2 box-2 box-2"
-      "box-1 box-1 box-1 box-1 box-2 box-2 box-2 box-2"
-      "box-3 box-3 box-3 box-3 box-4 box-4 box-4 box-4"
-      "box-3 box-3 box-3 box-3 box-4 box-4 box-4 box-4"
-      "box-3 box-3 box-3 box-3 box-4 box-4 box-4 box-4"
-      "box-5 box-5 box-5 box-5 box-6 box-6 box-6 box-6"
-      "box-5 box-5 box-5 box-5 box-6 box-6 box-6 box-6"
-      "box-5 box-5 box-5 box-5 box-6 box-6 box-6 box-6";
+      "box-1 box-1 box-1 box-2 box-2 box-2 "
+      "box-1 box-1 box-1 box-2 box-2 box-2 "
+      "box-3 box-3 box-3 box-4 box-4 box-4 " 
+      "box-3 box-3 box-3 box-4 box-4 box-4  "
+      "box-3 box-3 box-3 box-4 box-4 box-4 "
+      "box-5 box-5 box-5 box-6 box-6 box-6 "
+      "box-5 box-5 box-5 box-6 box-6 box-6"
+      "box-5 box-5 box-5 box-6 box-6 box-6";
    color: #e4b8d0;
    padding: 10px;
 }
