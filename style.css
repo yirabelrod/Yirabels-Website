@@ -279,7 +279,16 @@ nav .menu-btn:checked ~ .menu-icon .navicon:after {
 .artistpage {
    background-color: #feebf6;
    min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    text-align: center;
+   background-image: url("otherimages/Lacetrim.png");
+   background-size: cover; 
+   background-position: center;  
+   background-repeat: no-repeat; 
+   background-attachment: fixed; 
 }
 
 .artistimg {
