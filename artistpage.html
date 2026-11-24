@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Artist Statement - Yirabel Rodriguez</title> 
-    <link type="text/css" rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Statement - Yirabel Rodriguez</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Ingrid+Darling&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Ingrid+Darling&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/x-icon" href="yrlogo.png">
+  <link rel="icon" type="image/png" href="yrlogo.png">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="artistpage">
+  <header>
+    <nav aria-label="Primary navigation">
+      <a href="index.html" class="logo" aria-label="Home"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <label class="menu-icon" for="menu-btn" aria-label="Toggle menu">
+        <span class="navicon" aria-hidden="true"></span>
+      </label>
+      <ul class="menu">
+        <li><a href="works.html">WORKS</a></li>
+        <li><a href="artistpage.html" class="active" aria-current="page">ARTIST</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <nav>
-            <a href="index.html" class="logo"></a>
-            <input class="menu-btn" type="checkbox" id="menu-btn">
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu">
-                <li><a href="works.html">WORKS</a></li>
-                <li><a href="artistpage.html" class="active">ARTIST</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main class="artist-main">
+    <div class="artistimg">
+      <img src="laceheadshot.png" alt="Portrait headshot of artist Yirabel Rodriguez" width="550" height="700">
+    </div>
 
-    <main class="artist-main">
-        <!-- Headshot Image Box -->
-        <div class="artistimg">
-            <img src="laceheadshot.png" alt="Headshot" width="550" height="700">
-        </div>
-
-        <!-- Statement Description Only -->
-        <div class="artist-statement-box">
-            <div class="statement-text">
-                <p>Yirabel Rodriguez is a South Florida based artist attending New World School of the Arts in downtown Miami.</p>
-                <p>Her art centers around social dynamics, domesticity and the female experience.</p>
-                <p>Her background in painting and multi media work has paved a path for her current practice as she completes her Bachelors of Fine Arts with a focus in Sculpture at the University of Florida.</p>
-            </div>
-        </div>
-    </main>
-
+    <div class="artist-statement-box">
+      <div class="statement-text">
+        <p>Yirabel Rodriguez is a South Florida based artist attending New World School of the Arts in downtown Miami.</p>
+        <p>Her art centers around social dynamics, domesticity and the female experience.</p>
+        <p>Her background in painting and multi media work has paved a path for her current practice as she completes her Bachelors of Fine Arts with a focus in Sculpture at the University of Florida.</p>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
